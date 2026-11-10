@@ -1,40 +1,76 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8">
+<!DOCTYPE html><html lang="en"><head><title>MySpendbook – Personal expense tracker for India</title>
+<meta name="description" content="MySpendbook records your spending automatically from bank SMS and payment notifications, brings all your banks, cards and UPI apps into one place, and reminds you before bills are due.">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MySpendbook – Track spends, save more</title>
-<meta name="description" content="MySpendbook – personal expense tracker for India. Privacy policy, terms and account deletion.">
 <style>
-:root{--green:#0B6B3A;--soft:#E9F4EE;--line:#E7EDEA;--text:#14231B;--muted:#5E6B64;--bg:#F8FAF9}
-*{box-sizing:border-box}
-body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif;color:var(--text);background:var(--bg);line-height:1.65;font-size:16px}
-header{background:var(--green);color:#fff;padding:18px 16px}
-header a{color:#fff;text-decoration:none;font-size:22px;font-weight:700}
-header span{opacity:.85;font-size:14px;margin-left:6px}
-nav{background:#fff;border-bottom:1px solid var(--line);padding:10px 16px;display:flex;flex-wrap:wrap;gap:8px 18px}
-nav a{color:var(--green);text-decoration:none;font-weight:600;font-size:15px}
-nav a.on{text-decoration:underline}
-main{max-width:760px;margin:0 auto;padding:24px 16px 48px}
-h1{color:var(--green);font-size:28px;line-height:1.25;margin:0 0 6px}
-h2{font-size:19px;margin:28px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
-.meta{color:var(--muted);font-size:14px;margin:0 0 18px}
-.box{background:var(--soft);border:1px solid #CFE6D8;border-radius:12px;padding:14px 16px;margin:16px 0}
-table{width:100%;border-collapse:collapse;font-size:15px}
-th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
-a{color:var(--green)}
-ul,ol{padding-left:22px}
-footer{text-align:center;color:var(--muted);font-size:13px;padding:20px 16px;border-top:1px solid var(--line)}
-</style></head>
-<body><header><a href="index.html">MySpendbook</a><span>· Track spends, save more</span></header>
+  :root { --green:#0b6b3a; --soft:#e9f4ee; --line:#cfe6d8; --text:#14231b; --muted:#5e6b64; --bg:#f6f8f7; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif; color:var(--text); background:var(--bg); line-height:1.65; }
+  header { background:var(--green); color:#fff; padding:18px 12px; }
+  header a { color:#fff; text-decoration:none; font-size:28px; font-weight:800; }
+  header span { opacity:.92; font-size:17px; }
+  nav { background:#fff; border-bottom:1px solid #e3e9e6; padding:10px 12px; }
+  nav a { color:var(--green); text-decoration:none; font-weight:600; margin-right:22px; font-size:17px; }
+  nav a.on { text-decoration:underline; }
+  main { max-width:1000px; margin:0 auto; padding:24px 18px 40px; }
+  h1 { color:var(--green); font-size:34px; margin:6px 0 4px; }
+  h2 { color:var(--green); font-size:22px; margin:30px 0 8px; }
+  h3 { font-size:17px; margin:18px 0 4px; }
+  .meta { color:var(--muted); margin:0 0 18px; }
+  .box { background:var(--soft); border:1px solid var(--line); border-radius:12px; padding:14px 20px; margin:18px 0; }
+  table { border-collapse:collapse; width:100%; margin:10px 0; background:#fff; }
+  th, td { border:1px solid #dfe7e3; padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:var(--soft); }
+  ul { padding-left:22px; } li { margin:4px 0; }
+  footer { text-align:center; color:var(--muted); font-size:14px; padding:20px 12px 30px; border-top:1px solid #e3e9e6; }
+  a { color:var(--green); }
+</style>
+</head><body>
+<header><a href="index.html">MySpendbook</a><span> · Track spends, save more</span></header>
 <nav><a href="index.html" class="on">Home</a><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="delete-account.html">Delete Account</a></nav>
-<main><h1>MySpendbook</h1>
+<main>
+<h1>MySpendbook</h1>
 <p class="meta">Personal expense tracker for India · Android app by Budde Bharath Kumar</p>
-<p>MySpendbook records your spending automatically from bank SMS and payment notifications, so you don't have to type every expense. See where your money goes each day and month, get a polite reminder before a credit card bill, EMI or subscription is due, and enjoy a short daily money check-in in 12 Indian languages.</p>
+
+<p>MySpendbook records your spending automatically from your bank SMS and payment notifications, so you don't have to type every expense. It brings all your bank accounts, cards and UPI apps into one place, shows where your money goes, reminds you before a credit card bill, EMI or subscription is due, and gives you a short daily money check-in in 12 Indian languages.</p>
+
+<h2>One place for all your accounts</h2>
+<p>Most of us pay from more than one bank account, more than one card and more than one UPI app, and each bank or app shows only its own history. MySpendbook puts them together:</p>
+<ul>
+  <li>Every bank account and card that sends SMS to your phone, in one list</li>
+  <li>Your total for today, the last 7 days, the last 30 days or any date range you pick</li>
+  <li>Filter by payment app (PhonePe, Google Pay, Paytm…), by bank, by category, or by the last 4 digits of a card or account</li>
+  <li>Search a person, shop or pharmacy and see everything you paid them</li>
+  <li>Analytics: where your money goes, how you paid, and how much you could save</li>
+  <li>Compare two periods side by side</li>
+  <li>Add cash and other expenses yourself; download your list as Excel or PDF</li>
+</ul>
+
+<h2>Never miss a due date – avoid late charges</h2>
+<p>Even when the money is there, a busy day can make you miss a bill, and that costs late fees and interest.</p>
+<ul>
+  <li>Credit card bills, loan EMIs, insurance premiums and subscription renewals are found in your bank SMS</li>
+  <li>For each bill you see the total due, how much you have paid and how much is still pending</li>
+  <li>A reminder at 9:30 AM the day before and on the due date – only while something is still unpaid</li>
+  <li>If you allow it, the reminder opens as a full-screen "Save your money" card, even on the lock screen; otherwise it comes as a high-priority notification</li>
+</ul>
+
+<h2>Your true spending, counted once</h2>
+<p>Card purchases are counted on the day you spend, so paying the card bill later is not counted again. ATM withdrawals and bank messages that say "self transfer" are not counted as spending, and you can mark any person – yourself or family – as Transfer once and MySpendbook remembers it.</p>
+
+<h2>Why MySpendbook reads bank SMS</h2>
+<p>Payment apps do not show a notification for every payment, and many payments – card swipes, auto-debits, EMIs – never appear in a payment-app notification at all. Your bank's SMS is the complete record of every debit, so MySpendbook reads it – on your phone – to show your real total.</p>
+<div class="box">
+  <strong>Your privacy:</strong> only messages from bank, card and lender senders about money are used. OTPs, personal messages and promotions are ignored on your phone. The message text is never uploaded – only the amount, payee, date, category and last digits are saved in your own account. Your data is never sold or used for ads. <a href="privacy-policy.html">Read the privacy policy</a>.
+</div>
+
 <div class="box"><strong>Contact &amp; support:</strong> <a href="mailto:dailypay.dp@gmail.com">dailypay.dp@gmail.com</a></div>
 <ul>
-<li><a href="privacy-policy.html">Privacy Policy</a></li>
-<li><a href="terms.html">Terms and Conditions</a></li>
-<li><a href="delete-account.html">Delete your account and data</a></li>
+  <li><a href="privacy-policy.html">Privacy Policy</a></li>
+  <li><a href="terms.html">Terms and Conditions</a></li>
+  <li><a href="delete-account.html">Delete your account and data</a></li>
 </ul>
+<p class="meta">MySpendbook is not affiliated with any bank or payment app. Their names are shown only to label your own transactions.</p>
 </main>
 <footer>© 2026 MySpendbook · Budde Bharath Kumar · India · <a href="mailto:dailypay.dp@gmail.com">dailypay.dp@gmail.com</a></footer>
 </body></html>
